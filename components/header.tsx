@@ -1,7 +1,8 @@
 import Image from "next/image";
 import ProfilePic from "@/public/profile.jpeg";
 import { HeaderButtons } from "./header-buttons";
-
+import ShinyButton from "./ui/shiny-button";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -18,13 +19,10 @@ export const Header = () => {
           Focused on building things which can an impact
         </span>
         <div className="pt-3 flex flex-row gap-x-2 items-center justify-center sm:justify-start">
-          <HeaderButtons/>
-          <button className="relative overflow-hidden text-sm rounded-lg border px-3 py-1 font-medium group">
-            <span className="absolute inset-0 bg-green-500 transition-all duration-500 transform -translate-x-full group-hover:translate-x-0" />
-            <span className="relative  group-hover:text-white">
-              Open for work
-            </span>
-          </button>
+          <HeaderButtons />
+          <ShinyButton>
+            <Link href={""}>Open for gigs</Link>
+          </ShinyButton>
         </div>
       </div>
       <div>

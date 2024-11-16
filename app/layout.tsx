@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Roboto } from "@next/font/google";
+import { Roboto } from 'next/font/google'
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${roboto.className} min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6`}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider attribute={"class"} defaultTheme="dark">{children}</ThemeProvider>
       </body>
     </html>
   );

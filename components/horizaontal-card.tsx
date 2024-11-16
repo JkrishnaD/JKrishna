@@ -1,11 +1,13 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
+
 import { useState } from "react";
 import { Card, CardHeader } from "./ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
+import { ChevronRightIcon } from "lucide-react";
+import { FaLocationDot } from "react-icons/fa6";
 
 interface CardProps {
   logoUrl: string;
@@ -16,6 +18,7 @@ interface CardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  location?: string;
 }
 export const HorizontalCard = ({
   logoUrl,
@@ -26,6 +29,7 @@ export const HorizontalCard = ({
   badges,
   period,
   description,
+  location,
 }: CardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -52,8 +56,8 @@ export const HorizontalCard = ({
           </Avatar>
         </div>
         <div className="flex-grow items-center flex-col group">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-x-2 text-base">
+          <CardHeader className="px-4">
+            <div className="flex items-center justify-between sm:gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                 {title}
                 {badges && (
@@ -80,7 +84,15 @@ export const HorizontalCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            <div className="flex items-center space-x-2">
+              {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+              {location && (
+                <div className="font-sans text-xs flex items-center gap-x-1">
+                  <FaLocationDot />
+                  {location}
+                </div>
+              )}
+            </div>
           </CardHeader>
           {description && (
             <motion.div

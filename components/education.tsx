@@ -12,6 +12,7 @@ export const Education = () => {
           logoUrl={education.logoUrl}
           altText={education.school}
           href={education.href}
+          location={education.location}
           title={education.school}
           subtitle={education.degree}
           period={`${education.start} - ${education.end}`}

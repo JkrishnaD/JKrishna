@@ -1,4 +1,3 @@
-import { Globe } from "lucide-react";
 import { FaUpwork, FaXTwitter } from "react-icons/fa6";
 import { BsGithub, BsGlobe, BsLinkedin } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
@@ -182,7 +181,7 @@ export const DATA = {
       dates: "",
       active: true,
       description:
-      "A user-friendly blogging platform that allows individuals to sign in using email credentials, write blogs, and manage their published content. The platform enables users to view their own blogs in a seamless interface. Built using modern technologies like React for the frontend, Express and Hono for the backend, PostgreSQL for database management, and Zod for validation, Inkwell Blog offers a robust and secure experience for content creators.",
+        "A user-friendly blogging platform that allows individuals to sign in using email credentials, write blogs, and manage their published content. The platform enables users to view their own blogs in a seamless interface. Built using modern technologies like React for the frontend, Express and Hono for the backend, PostgreSQL for database management, and Zod for validation, Inkwell Blog offers a robust and secure experience for content creators.",
       technologies: [
         "React",
         "Typescript",
@@ -192,7 +191,7 @@ export const DATA = {
         "Shadcn UI",
         "zod",
         "prisma",
-        "Hono"
+        "Hono",
       ],
       links: [
         {
@@ -215,6 +214,7 @@ export const DATA = {
       school: "Jain University",
       href: "https://www.jainuniversity.ac.in/",
       degree: "B-Tech in Computer science",
+      location: "Banglore,Karnataka",
       logoUrl: "/jain.png",
       start: "2022",
       end: "2026",
