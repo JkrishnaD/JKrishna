@@ -18,9 +18,9 @@ export const Header = () => {
           <br />
           Focused on building things which can an impact
         </span>
-        <div className="pt-3 flex flex-row gap-x-2 items-center justify-center sm:justify-start">
+        <div className="pt-3 flex sm:flex-row flex-col-reverse gap-2  items-center justify-center sm:justify-start">
           <HeaderButtons />
-          <ShinyButton>
+          <ShinyButton className="">
             <Link href={""}>Open for gigs</Link>
           </ShinyButton>
         </div>
