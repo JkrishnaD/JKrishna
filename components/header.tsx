@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <div className="flex sm:flex-row flex-col-reverse justify-between items-center lg:items-start rounded-md lg:px-0 gap-x-10 mt-5">
+    <div className="flex sm:flex-row flex-col-reverse justify-between items-center rounded-md mt-5 max-w-2xl w-full">
       <div className="flex flex-col py-4 space-y-1 px-2 lg:px-0 text-center md:text-start">
         <span className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
           Hi, I&apos;m Jayakrishna
