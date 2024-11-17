@@ -19,7 +19,7 @@ export const HeaderButtons = () => {
                   <button.icon className="border size-7 p-1 rounded-md group" />
                 </a>
               </TooltipTrigger>
-              <TooltipContent side="bottom" className="bg-black text-white">
+              <TooltipContent side="bottom" className="bg-black text-white dark:text-black dark:bg-white">
                 <p>{button.message}</p>
               </TooltipContent>
             </span>
