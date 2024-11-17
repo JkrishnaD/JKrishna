@@ -45,13 +45,15 @@ export const DATA = {
     "Express",
     "MongoDb",
     "Go",
-    "Postgres",
+    "Postgress",
     "Docker",
     "Kafka",
     "Git",
+    "Github",
     "Redis",
     "Prisma",
     "Postman",
+    "websockets",
   ],
   Projects: [
     {
@@ -68,14 +70,8 @@ export const DATA = {
         "Prisma",
         "Postgres",
         "TailwindCSS",
-        "Shadcn UI",
       ],
       links: [
-        {
-          type: "Website",
-          href: "",
-          icon: <BsGlobe className="size-3" />,
-        },
         {
           type: "Source",
           href: "https://github.com/JkrishnaD/zapier",
@@ -177,11 +173,11 @@ export const DATA = {
     },
     {
       title: "Inkwell",
-      href: "https://authentication-delta-five.vercel.app/",
+      href: "https://ink-well-tan.vercel.app/signin",
       dates: "",
       active: true,
       description:
-        "A user-friendly blogging platform that allows individuals to sign in using email credentials, write blogs, and manage their published content. The platform enables users to view their own blogs in a seamless interface. Built using modern technologies like React for the frontend, Express and Hono for the backend, PostgreSQL for database management, and Zod for validation, Inkwell Blog offers a robust and secure experience for content creators.",
+        "A user-friendly blogging platform that allows individuals to sign in using email credentials, write blogs, and manage their published content. The platform enables users to view their own blogs in a seamless interface. Built using modern technologies like React for the frontend, Express and Hono for the backend, PostgreSQL for database management, and Zod for validation.",
       technologies: [
         "React",
         "Typescript",
@@ -206,6 +202,29 @@ export const DATA = {
         },
       ],
       image: "/inkwell.png",
+      video: "",
+    },
+    {
+      title: "Landing-page",
+      href: "https://postable-liard.vercel.app/",
+      dates: "",
+      active: true,
+      description:
+        "This landing page is designed to provide an interactive user experience, built with Next.js, TailwindCSS, and TypeScript for seamless performance and modern design.",
+      technologies: ["NextJs", "Typescript", "TailwindCSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://postable-liard.vercel.app/",
+          icon: <BsGlobe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/JkrishnaD/postable",
+          icon: <BsGithub className="size-3" />,
+        },
+      ],
+      image: "/postable.png",
       video: "",
     },
   ],
